@@ -1,0 +1,12 @@
+# 문제 주소
+# https://www.acmicpc.net/status?user_id=gks4478&problem_id=1181&from_mine=1
+cnt = int(input())
+stack = []
+for c in range(cnt):
+    stack.append(input())
+
+stack = list(set(stack))
+stack.sort(key= lambda x: (len(x), x))
+
+for s in stack:
+    print((s))
